@@ -10,7 +10,7 @@ function Navbar() {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://docs.google.com/document/d/1LX_6HSDn-qbBcI7oTWEk9N_J1mIZjxPZc4panc1y9Jk/edit?usp=drive_link" target="_blank">Resume</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1JUp7bNK8kMkDbtiGAu0sO6W7LJmN0DMj" target="_blank">Resume</a></li>
         </ul>
       </div>
     </nav>

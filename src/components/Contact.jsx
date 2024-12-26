@@ -12,7 +12,7 @@ function Contact() {
         <br />
         Or
         <br />
-        For more info : <a href="https://docs.google.com/document/d/1LX_6HSDn-qbBcI7oTWEk9N_J1mIZjxPZc4panc1y9Jk/edit?usp=drive_link" target="_blank">Resume</a>
+        For more info : <a href="https://drive.google.com/drive/folders/1JUp7bNK8kMkDbtiGAu0sO6W7LJmN0DMj" target="_blank">Resume</a>
           
 
       </p>
