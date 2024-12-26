@@ -9,6 +9,12 @@ function Contact() {
         <a href="mailto:kshitijgaikwad142004@gmail.com" className="email-link">
           kshitijgaikwad142004@gmail.com
         </a>
+        <br />
+        Or
+        <br />
+        For more info : <a href="https://docs.google.com/document/d/1LX_6HSDn-qbBcI7oTWEk9N_J1mIZjxPZc4panc1y9Jk/edit?usp=drive_link" target="_blank">Resume</a>
+          
+
       </p>
     </section>
   );

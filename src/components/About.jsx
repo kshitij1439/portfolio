@@ -5,9 +5,7 @@ function About() {
     <section id="about" className="about">
       <h2>About Me</h2>
       <p>
-        I’m currently working on WebRTC and learning DevOps. I love
-        collaborating on hackathon projects and am seeking guidance or
-        opportunities for an internship.
+      I’m currently focused on WebRTC and enhancing my DevOps skills. I enjoy collaborating on hackathon projects, which allow me to solve problems creatively and build innovative solutions. As I continue to grow my expertise, I’m seeking guidance and exploring internship opportunities to contribute to impactful projects while gaining industry experience.
       </p>
     </section>
   );
