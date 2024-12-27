@@ -3,12 +3,12 @@ import { skill } from "./Data";
 function Projects() {
   let skills=skill
   const projects = [
-    // {
-    //   title: "Finance Clone",
-    //   description: "A full-stack trading platform for portfolio management, data visualization, and secure user interactions.",
-    //   link: "https://finance-clone.vercel.app",
-    //   tech: ["MongoDB", "Express.js", "React", "Node.js", "Material UI", "REST API", "JWT"],
-    // },
+    {
+      title: "TrackStock - Zerodha Clone",
+      description: "A full-stack trading platform for portfolio management, data visualization, and secure user interactions.",
+      link: "https://financefrontend-gdci.onrender.com/",
+      tech: ["MongoDB", "Express.js", "React", "Node.js","Bootstrap", "Material UI"],
+    },
     {
       title: "Gemini Wrapper",
       description: "A dynamic web application generating AI-based responses to user queries in real-time.",
@@ -24,7 +24,7 @@ function Projects() {
     {
       title: "CloudBnB (Airbnb Clone)",
       description: "A secure lodging and review management system with cloud-based media storage.",
-      link: "https://hotelproject-h8tx.onrender.com/",
+      link: "https://hotelproject-h8tx.onrender.com/listings",
       tech: ["MongoDB", "Express.js", "Node.js", "EJS", "Cloudinary", "JWT", "Joi"],
     },
   ];
@@ -70,7 +70,7 @@ function Projects() {
             ))}
       </div>
       <a href="https://github.com/kshitij1439" className="btn" id="more-projects">
-        More Projects
+        Working on Projects
       </a>
     </section>
   );

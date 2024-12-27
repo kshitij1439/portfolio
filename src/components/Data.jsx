@@ -24,6 +24,7 @@ export const skill = [
     { name: "Material UI", badge: "https://img.shields.io/badge/-Material%20UI-0081CB?logo=mui&logoColor=white" },
     { name: "Vite", badge: "https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white" },
     { name: "Axios", badge: "https://img.shields.io/badge/-Axios-5A29E6?logo=axios&logoColor=white" },
+    { name: "Bootstrap", badge: "https://img.shields.io/badge/-Bootstrap-563D7C?logo=bootstrap&logoColor=white" },
     { name: "Custom CSS", badge: "https://img.shields.io/badge/-Custom%20CSS-FF4081?logo=css3&logoColor=white" },
     { name: "API Integration", badge: "https://img.shields.io/badge/-API%20Integration-00B0B9?logo=api&logoColor=white" },
     { name: "DSA", badge: "https://img.shields.io/badge/-DSA-2b3137?logo=hackerrank&logoColor=white" },
