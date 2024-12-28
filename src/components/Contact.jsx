@@ -6,7 +6,7 @@ function Contact() {
       <h2>Contact Me</h2>
       <p>
         Feel free to reach out to me at:{" "}
-        <a href="mailto:kshitijgaikwad142004@gmail.com" className="email-link">
+        <a href="mailto:kshitijgaikwad142004@gmail.com" className="email-link text-blue-300">
           kshitijgaikwad142004@gmail.com
         </a>
         <br />

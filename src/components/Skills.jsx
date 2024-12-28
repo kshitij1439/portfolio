@@ -7,7 +7,7 @@ function Skills() {
   
   return (
     <section id="skills" className="skills">
-      <h2>Technologies, Skills & Achievements</h2>
+      <h2 className="font-bold pt-5 text-my-extra-large">Technologies, Skills & Achievements</h2>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
