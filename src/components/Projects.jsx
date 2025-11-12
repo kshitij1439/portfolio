@@ -33,6 +33,14 @@ function Projects() {
       githubLink: "https://github.com/kshitij1439/hotelproject",
       tech: ["MongoDB", "Express.js", "Node.js", "EJS", "Cloudinary", "JWT", "Joi"],
     },
+    {
+      title: "AI-Xi (Gemini AI Clone)",
+      description: "An advanced conversational AI platform powered by Google's most sophisticated model. Features intelligent chat, code assistance, creative generation, and real-time learning capabilities with secure authentication and RAG.",
+      link: "https://ai-xi-flame.vercel.app/",
+      githubLink: "https://github.com/kshitij1439/ai", // replace if you have a different repo
+      tech: ["PostgreSQL", "Next.js", "OAuth", "shadcn/ui", "Vercel", "Google Gemini API"],
+    },
+
   ];
   
   return (
