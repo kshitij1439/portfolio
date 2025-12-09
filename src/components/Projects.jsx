@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React,{ useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Github, Code2, Folder, Terminal, ExternalLink } from "lucide-react";
 
