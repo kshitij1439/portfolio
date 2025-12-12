@@ -1,4 +1,4 @@
-import React,{ useRef } from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Github, Code2, Folder, Terminal, ExternalLink } from "lucide-react";
 
@@ -158,25 +158,36 @@ const Projects = () => {
 
                             {/* Iframe / Preview Area (Interactive Z-10) */}
                             <div
-                                className="relative w-full bg-slate-950 overflow-hidden group-hover:shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] border-b border-slate-800 z-10"
+                                className="relative w-full bg-slate-950 overflow-hidden group-hover:shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] border-b border-slate-800"
                                 style={{ aspectRatio: "16/9" }}
+                                onMouseEnter={(e) => {
+                                    const iframe =
+                                        e.currentTarget.querySelector("iframe");
+                                    if (iframe && !iframe.src) {
+                                        iframe.src = project.link;
+                                    }
+                                }}
                             >
                                 <div className="absolute inset-0 bg-slate-900 flex items-center justify-center">
                                     <iframe
-                                        src={project.link}
+                                        data-src={project.link}
                                         title={project.title}
                                         loading="lazy"
-                                        // Hide Scrollbars style
                                         style={{
                                             border: "none",
                                             scrollbarWidth: "none",
                                             msOverflowStyle: "none",
+                                            pointerEvents: "none",
                                         }}
                                         className="w-full h-full opacity-50 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0 [&::-webkit-scrollbar]:hidden"
                                         tabIndex="-1"
                                     />
                                 </div>
-                                {/* Gradient: Pointer events none so clicks go to iframe */}
+
+                                <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 flex items-center justify-center group-hover:opacity-0 transition-opacity pointer-events-none">
+                                    <ExternalLink className="w-12 h-12 text-purple-400 opacity-30" />
+                                </div>
+
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80 pointer-events-none" />
 
                                 <div className="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur border border-purple-500/30 px-3 py-1 rounded text-xs font-mono text-purple-300 pointer-events-none">
