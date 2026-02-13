@@ -10,7 +10,7 @@ const projects = [
         description:
             "Production-ready Gemini clone with persistent context via Mem0 & Qdrant Vector DB. Features Google OAuth, multimodal inputs, and edge-optimized streaming responses.",
         link: "https://ai-xi-flame.vercel.app/",
-        githubLink: "https://github.com/kshitij1439/geminiq",
+        githubLink: "https://github.com/kshitij1439/ai",
         tech: ["Next.js", "Gemini 2.5", "Mem0", "Qdrant", "OAuth"],
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         description:
             "Browser-based development environment utilizing WebContainer API. Features an integrated Xterm.js terminal, live web app previews, and a custom token reduction pipeline.",
         link: "https://coding-for-us-web.vercel.app/",
-        githubLink: "https://github.com/kshitij1439",
+        githubLink: "https://github.com/kshitij1439/coding-for-us",
         tech: ["WebContainer", "Next.js", "Xterm.js", "TypeScript"],
     },
     {
