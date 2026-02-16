@@ -8,8 +8,17 @@ body {
     padding: 0;
 }
 
+/* 
+  IMPORTANT: Do NOT set background on html/body to an opaque color.
+  The three.js canvases (FogScene z:-10, ParticlesFire z:20) are fixed
+  and need to be visible. Use a dark bg only on the root page div instead.
+*/
+html {
+    background: transparent; /* was #000 — that was hiding the canvases */
+}
+
 body {
-    background: transparent;
+    background: #0a0a0a;     /* dark baseline shows through transparent canvases */
     color: #e6e6e6;
     font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
         "Helvetica Neue", Arial;
@@ -25,8 +34,4 @@ body {
 ::selection {
     background: #ff7a18;
     color: #fff;
-}
-
-html {
-  background: #000;
 }

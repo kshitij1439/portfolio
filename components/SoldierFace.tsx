@@ -24,7 +24,7 @@ export default function SoldierFace() {
         <div className="flex items-center justify-center">
             <img
                 ref={faceRef}
-                src="/assets/soldiergibli.png"
+                src="/assets/soldier1.png"
                 alt="soldier half face"
                 className="w-[28vw] min-w-[280px] max-w-[420px] object-cover drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]"
                 style={{ imageRendering: 'high-quality' }}
