@@ -7,35 +7,33 @@
     line-height: 1.5;
     font-weight: 400;
     color-scheme: dark;
-    /* Scrollbar Styling for a "Cyber" feel */
     scrollbar-width: thin;
-    scrollbar-color: #a855f7 #0f172a;
+    scrollbar-color: #f97316 #000000; /* orange thumb, black track */
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #020617; /* match slate-950 */
+    background-color: #000000;
     min-height: 100vh;
-    /* Removed 'display: flex' and 'place-items: center' - this fixes layout issues */
 }
 
-/* Custom Scrollbar for Chrome/Safari */
+/* Chrome/Safari scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0f172a;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4b5563;
+    background: #374151;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a855f7;
+    background: #f97316; /* orange on hover */
 }
 
 html {

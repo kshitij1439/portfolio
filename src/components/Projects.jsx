@@ -7,8 +7,7 @@ const projects = [
         id: "AI_CORE_02",
         title: "AI-Xi Flame",
         category: "GenAI / Semantic Memory",
-        description:
-            "Production-ready Gemini clone with persistent context via Mem0 & Qdrant Vector DB. Features Google OAuth, multimodal inputs, and edge-optimized streaming responses.",
+        description: "Production-ready Gemini clone with persistent context via Mem0 & Qdrant Vector DB. Features Google OAuth, multimodal inputs, and edge-optimized streaming responses.",
         link: "https://ai-xi-flame.vercel.app/",
         githubLink: "https://github.com/kshitij1439/ai",
         tech: ["Next.js", "Gemini 2.5", "Mem0", "Qdrant", "OAuth"],
@@ -17,8 +16,7 @@ const projects = [
         id: "DEV_IDE_05",
         title: "Coding-for-Us",
         category: "Web IDE / Infrastructure",
-        description:
-            "Browser-based development environment utilizing WebContainer API. Features an integrated Xterm.js terminal, live web app previews, and a custom token reduction pipeline.",
+        description: "Browser-based development environment utilizing WebContainer API. Features an integrated Xterm.js terminal, live web app previews, and a custom token reduction pipeline.",
         link: "https://coding-for-us-web.vercel.app/",
         githubLink: "https://github.com/kshitij1439/coding-for-us",
         tech: ["WebContainer", "Next.js", "Xterm.js", "TypeScript"],
@@ -27,8 +25,7 @@ const projects = [
         id: "SYS_01",
         title: "TrackStock Platform",
         category: "FinTech / Data Viz",
-        description:
-            "Full-stack trading environment. Visualizes portfolio metrics and executes user transactions in real-time.",
+        description: "Full-stack trading environment. Visualizes portfolio metrics and executes user transactions in real-time.",
         link: "https://financefrontend-gdci.onrender.com/",
         githubLink: "https://github.com/kshitij1439/financefrontend",
         tech: ["MongoDB", "Express", "React", "Node", "MUI"],
@@ -37,8 +34,7 @@ const projects = [
         id: "AI_CORE_02",
         title: "Gemini AI Wrapper",
         category: "Artificial Intelligence",
-        description:
-            "Dynamic interface bridging user queries with LLM responses. Features real-time generation and context handling.",
+        description: "Dynamic interface bridging user queries with LLM responses. Features real-time generation and context handling.",
         link: "https://gemini-wrapper.vercel.app",
         githubLink: "https://github.com/kshitij1439/geminiq",
         tech: ["React", "Vite", "Generative AI"],
@@ -47,8 +43,7 @@ const projects = [
         id: "ENV_03",
         title: "ClimaView System",
         category: "API Integration",
-        description:
-            "Responsive meteorological dashboard aggregating real-time weather data with location-based services.",
+        description: "Responsive meteorological dashboard aggregating real-time weather data with location-based services.",
         link: "https://city-weather-api.onrender.com",
         githubLink: "https://github.com/kshitij1439/clima-view",
         tech: ["React", "REST API", "Vite"],
@@ -57,8 +52,7 @@ const projects = [
         id: "HST_04",
         title: "CloudBnB System",
         category: "Marketplace Architecture",
-        description:
-            "Secure lodging management system. Handles review aggregation, media storage, and JWT authentication.",
+        description: "Secure lodging management system. Handles review aggregation, media storage, and JWT authentication.",
         link: "https://hotelproject-h8tx.onrender.com/listings",
         githubLink: "https://github.com/kshitij1439/hotelproject",
         tech: ["MERN Stack", "JWT", "Cloudinary"],
@@ -70,54 +64,40 @@ const Projects = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.15 },
-        },
+        hidden:  { opacity: 0 },
+        visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
     };
-
     const cardVariants = {
-        hidden: { y: 30, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: { duration: 0.6, ease: "easeOut" },
-        },
+        hidden:  { y: 30, opacity: 0 },
+        visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
     };
 
     return (
-        <section
-            id="projects"
-            ref={ref}
-            className="py-24 bg-slate-950 relative overflow-hidden"
-        >
-            {/* Background Grid Elements */}
-            <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(128,90,213,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(128,90,213,0.03)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
+        <section id="projects" ref={ref} className="py-24 bg-black relative overflow-hidden">
+            {/* Subtle grid */}
+            <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Section Header */}
+                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     className="flex flex-col items-center mb-16"
                 >
-                    <div className="flex items-center gap-2 mb-4 px-4 py-1 rounded-full bg-purple-500/10 border border-purple-500/20">
-                        <Folder className="w-4 h-4 text-purple-400" />
-                        <span className="text-xs font-mono text-purple-300 tracking-widest">
-                            /PROJECT_ARCHIVE
-                        </span>
+                    <div className="flex items-center gap-2 mb-4 px-4 py-1 rounded-full bg-orange-500/8 border border-orange-500/15">
+                        <Folder className="w-4 h-4 text-orange-400" />
+                        <span className="text-xs font-mono text-orange-300/70 tracking-widest">/PROJECT_ARCHIVE</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4">
                         Deployed{" "}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-300 to-white">
                             Projects
                         </span>
                     </h2>
-                    <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-transparent rounded-full" />
+                    <div className="h-1 w-24 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
                 </motion.div>
 
-                {/* Projects Grid */}
+                {/* Grid */}
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
@@ -129,7 +109,7 @@ const Projects = () => {
                             key={index}
                             variants={cardVariants}
                             whileHover={{ y: -5 }}
-                            className="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-purple-500/40 transition-all duration-300 shadow-lg hover:shadow-purple-500/10"
+                            className="group relative bg-white/[0.02] border border-white/8 rounded-xl overflow-hidden hover:border-orange-500/25 transition-all duration-300 shadow-lg hover:shadow-orange-500/5"
                         >
                             <a
                                 href={project.link}
@@ -140,106 +120,81 @@ const Projects = () => {
                             >
                                 <span className="sr-only">View Project</span>
                             </a>
-                            <div className="bg-slate-950 border-b border-slate-800 p-3 flex items-center justify-between relative z-10 pointer-events-none">
+
+                            {/* Card titlebar */}
+                            <div className="bg-black border-b border-white/6 p-3 flex items-center justify-between relative z-10 pointer-events-none">
                                 <div className="flex gap-1.5">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors" />
-                                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500 transition-colors" />
-                                    <div className="w-2.5 h-2.5 rounded-full bg-green-500/20 group-hover:bg-green-500 transition-colors" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-white/5 group-hover:bg-red-500 transition-colors" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-white/5 group-hover:bg-yellow-500 transition-colors" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-white/5 group-hover:bg-green-500 transition-colors" />
                                 </div>
-                                <div className="text-[10px] font-mono text-slate-500 flex items-center gap-2">
-                                    <span className="hidden sm:inline">
-                                        User@System:~/deployments
-                                    </span>
-                                    <span className="text-purple-500">
-                                        {project.id}
-                                    </span>
+                                <div className="text-[10px] font-mono text-white/40 flex items-center gap-2">
+                                    <span className="hidden sm:inline">User@System:~/deployments</span>
+                                    <span className="text-orange-500">{project.id}</span>
                                 </div>
                             </div>
 
-                            {/* Iframe / Preview Area (Interactive Z-10) */}
+                            {/* Preview */}
                             <div
-                                className="relative w-full bg-slate-950 overflow-hidden group-hover:shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] border-b border-slate-800"
+                                className="relative w-full bg-black overflow-hidden border-b border-white/6"
                                 style={{ aspectRatio: "16/9" }}
                                 onMouseEnter={(e) => {
-                                    const iframe =
-                                        e.currentTarget.querySelector("iframe");
-                                    if (iframe && !iframe.src) {
-                                        iframe.src = project.link;
-                                    }
+                                    const iframe = e.currentTarget.querySelector("iframe");
+                                    if (iframe && !iframe.src) iframe.src = project.link;
                                 }}
                             >
-                                <div className="absolute inset-0 bg-slate-900 flex items-center justify-center">
+                                <div className="absolute inset-0 bg-black flex items-center justify-center">
                                     <iframe
                                         data-src={project.link}
                                         title={project.title}
                                         loading="lazy"
-                                        style={{
-                                            border: "none",
-                                            scrollbarWidth: "none",
-                                            msOverflowStyle: "none",
-                                            pointerEvents: "none",
-                                        }}
-                                        className="w-full h-full opacity-50 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0 [&::-webkit-scrollbar]:hidden"
+                                        style={{ border: "none", scrollbarWidth: "none", msOverflowStyle: "none", pointerEvents: "none" }}
+                                        className="w-full h-full opacity-40 group-hover:opacity-90 transition-opacity duration-500 grayscale group-hover:grayscale-0 [&::-webkit-scrollbar]:hidden"
                                         tabIndex="-1"
                                     />
                                 </div>
-
-                                <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 flex items-center justify-center group-hover:opacity-0 transition-opacity pointer-events-none">
-                                    <ExternalLink className="w-12 h-12 text-purple-400 opacity-30" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-black/50 to-black/50 flex items-center justify-center group-hover:opacity-0 transition-opacity pointer-events-none">
+                                    <ExternalLink className="w-12 h-12 text-orange-400 opacity-20" />
                                 </div>
-
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80 pointer-events-none" />
-
-                                <div className="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur border border-purple-500/30 px-3 py-1 rounded text-xs font-mono text-purple-300 pointer-events-none">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 pointer-events-none" />
+                                <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur border border-orange-500/20 px-3 py-1 rounded text-xs font-mono text-orange-300/60 pointer-events-none">
                                     STATUS: ACTIVE
                                 </div>
                             </div>
 
+                            {/* Info */}
                             <div className="p-6 relative pointer-events-none">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
-                                        <h3 className="text-xl font-bold text-slate-100 group-hover:text-purple-400 transition-colors flex items-center gap-2">
+                                        <h3 className="text-xl font-bold text-white/80 group-hover:text-orange-400 transition-colors flex items-center gap-2">
                                             {project.title}
-                                            <ExternalLink
-                                                size={14}
-                                                className="opacity-0 group-hover:opacity-100 transition-opacity text-purple-400"
-                                            />
+                                            <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity text-orange-400" />
                                         </h3>
-                                        <p className="text-xs font-mono text-slate-500 mt-1">
-                                            {project.category}
-                                        </p>
+                                        <p className="text-xs font-mono text-white/45 mt-1">{project.category}</p>
                                     </div>
-                                    <Code2 className="w-6 h-6 text-slate-600 group-hover:text-white transition-colors" />
+                                    <Code2 className="w-6 h-6 text-white/45 group-hover:text-white/50 transition-colors" />
                                 </div>
 
-                                <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                                    {project.description}
-                                </p>
+                                <p className="text-white/55 text-sm leading-relaxed mb-6">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tech.map((tech, i) => (
-                                        <span
-                                            key={i}
-                                            className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider text-cyan-300 bg-cyan-950/30 border border-cyan-900/50 rounded"
-                                        >
+                                        <span key={i} className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider text-orange-300/60 bg-orange-950/20 border border-orange-900/30 rounded">
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
 
-                                {/* Footer Actions */}
-                                <div className="flex items-center justify-between pt-4 border-t border-slate-800 relative z-20">
-                                    {/* Status Indicator */}
-                                    <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                <div className="flex items-center justify-between pt-4 border-t border-white/6 relative z-20">
+                                    <div className="flex items-center gap-2 text-xs text-white/25 font-mono">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
                                         <span>System Operational</span>
                                     </div>
-
                                     <a
                                         href={project.githubLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 px-3 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 hover:text-white transition-colors border border-slate-700 pointer-events-auto"
+                                        className="flex items-center gap-2 px-3 py-1.5 rounded bg-white/[0.03] hover:bg-white/8 text-xs font-semibold text-white/40 hover:text-white transition-colors border border-white/8 pointer-events-auto"
                                     >
                                         <Github size={14} />
                                         <span>Code</span>
@@ -250,7 +205,7 @@ const Projects = () => {
                     ))}
                 </motion.div>
 
-                {/* Bottom Call to Action */}
+                {/* CTA */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={isInView ? { opacity: 1 } : {}}
@@ -261,14 +216,12 @@ const Projects = () => {
                         href="https://github.com/kshitij1439"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative px-6 py-3 bg-slate-900 border border-slate-700 rounded-lg overflow-hidden"
+                        className="group relative px-6 py-3 bg-white/[0.02] border border-white/8 rounded-lg overflow-hidden hover:border-orange-500/30 transition-colors"
                     >
-                        <div className="absolute inset-0 w-full h-full bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
-                        <span className="flex items-center gap-3 text-slate-300 group-hover:text-white transition-colors">
+                        <div className="absolute inset-0 bg-orange-600 opacity-0 group-hover:opacity-8 transition-opacity duration-300" />
+                        <span className="flex items-center gap-3 text-white/40 group-hover:text-white transition-colors">
                             <Terminal size={18} />
-                            <span className="font-mono text-sm">
-                                git checkout --all-projects
-                            </span>
+                            <span className="font-mono text-sm">git checkout --all-projects</span>
                         </span>
                     </a>
                 </motion.div>
